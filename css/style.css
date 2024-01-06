@@ -1,0 +1,75 @@
+:root {
+    /* Layout */
+    --mobile-width: 375px;
+    --destop-width: 1440px;
+
+    /* Colors */
+
+    /* Primary */
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+    --green :hsl(144, 84%, 45%);
+
+    /* Neutral */
+
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Typography */
+
+    --ff-base: 'Work Sans', sans-serif;
+    --ff-logo: 'Rubik', sans-serif;
+
+    --fs-base: 1rem;
+    --fs-step-title: 1.25rem;
+    --fs-step-head: 1rem;
+    --fs-input: 1.25rem;
+    
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    
+}
+
+.work-time {
+    font-family: var(--ff-base);
+    text-transform: uppercase;
+}
+
+.work-time p {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 14px;
+}
+
+.work-time p svg {
+    height: 1rem;
+    width: 1rem;
+    
+    animation: spin 2s linear infinite;
+}
+
+.work-time p svg path {
+    fill: var(--green);
+    stroke: var(--green);
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
