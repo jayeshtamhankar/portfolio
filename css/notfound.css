@@ -1,0 +1,77 @@
+:root {
+    /* Typography */
+
+    --ff-base: 'Work Sans', sans-serif;
+
+    --fs-base: 1rem;
+    --fs-step-title: 1.25rem;
+    --fs-step-head: 1rem;
+    --fs-input: 1.25rem;
+    
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    width: clamp(21.875rem, 2.913rem + 80.906vw, 100rem);
+
+    margin: 0 auto;
+}
+
+.messege {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    text-align: center;
+}
+
+.messege h1 {
+    font-family: var(--ff-base);
+    font-size: clamp(1.5rem, 1.275rem + 0.9599vw, 2.4269rem);
+    text-transform: uppercase;
+}
+
+em {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+em span {
+    display: inline-block;
+}
+
+em span svg {
+    height: clamp(8rem, 2.6602rem + 22.7832vw, 30rem);
+    width: auto;
+}
+
+em .star {
+    animation: spin 8s linear infinite;
+}
+
+em .star svg path{
+    fill: rgb(0, 206, 120);
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
